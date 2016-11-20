@@ -6,7 +6,7 @@ void Esc::begin() {
 
   //Initilize ESC
 	Serial.println("Starting ESC Handshake");
-  digitalWrite(led2,HIGH);
+
 	_esc->attach(servo_pin); //ESC needs a low high low signal to turn on
 	delay(500);
 	_esc->write(0);
@@ -16,7 +16,7 @@ void Esc::begin() {
 	_esc->write(0);
 	delay(1000);
 	Serial.println("Finished ESC Handshake");
-  digitalWrite(led2,LOW);
+
 }
 
 

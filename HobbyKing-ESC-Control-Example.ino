@@ -24,7 +24,7 @@ void setup(){
 
 void loop(){
   //Read Throttle Input
- 	rawIn = analogRead(A10);
+ 	rawIn = analogRead(A0);
 	Serial.print("Raw In: ");
 	Serial.println(rawIn);
 
